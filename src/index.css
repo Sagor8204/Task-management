@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link_color {
+  color: var(--link-color);
+}
+
+.sidebar {
+  border-right: 1px solid var(--border-color);
+  background-color: var(--header-color);
+}
+
+.sidebar_item,
+.logo {
+  color: var(--text-color);
+}
+
+.sidebar_item:hover {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+.sidebar_item_active {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+.nav,
+.logo {
+  background-color: var(--header-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search_input,
+.search_button {
+  border: 1px solid var(--border-color);
+}
+
+.search_input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.search_button {
+  background-color: var(--container-color);
+}
+
+.search_input::placeholder {
+  color: white;
+  font-size: 15px;
+}
+
+.profile {
+  border: 2px solid var(--border-color);
+}
+
+.not_found {
+  color: var(--text-color);
+}
+
+.task_card_item {
+  border: 1px solid var(--border-color);
+}
+
+.gray_text_color {
+  color: #7c828b;
+  font-weight: 500;
+}
+
+.card_more_num {
+  color: var(--primary-color);
+}
+
+.topBar_plus_icon {
+  background-color: var(--container-color);
+}
+
+.topBar_dots_icon:hover {
+  background-color: var(--container-color);
+}
+
+.task_grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.add_project {
+  border: 1px solid var(--border-color);
+}
+
+.add_project:hover {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+.add_project_input {
+  border: 1px solid var(--border-color);
+}
+
+.add_project_input::placeholder {
+  font-size: 14px;
+}
+
+.react-calendar {
+  border-radius: 6px;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* below another */
+
+.modal_overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s ease-in-out;
+}
+
+.show_modal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal_content {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.modal_overlay.show_modal .modal_content {
+  opacity: 1;
+}
+
+.todo_item {
+  background-color: var(--secondary-color);
+}
