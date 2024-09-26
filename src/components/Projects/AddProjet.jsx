@@ -15,7 +15,7 @@ const AddProjet = ({ open, setOpen }) => {
         open && "show_modal"
       } modal_overlay fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center`}
     >
-      <div className="modal_content w-[400px] bg-white rounded-md py-3 px-4 relative">
+      <div className="modal_content w-[400px] absolute bg-white rounded-md py-3 px-4">
         <MdClose
           onClick={() => setOpen(false)}
           className="absolute -right-6 -top-9 text-white text-3xl cursor-pointer"

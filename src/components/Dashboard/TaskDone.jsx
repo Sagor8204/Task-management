@@ -123,7 +123,7 @@ const TaskDone = () => {
   return (
     <div style={{ width: "100%", height: 400 }} className="bg-white p-3">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl mb-1">Task Done</h1>
+        <h1 className="text-2xl mb-5">Task Done</h1>
         <div>
           <button
             className="px-5 gray_text_color"

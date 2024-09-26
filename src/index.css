@@ -100,32 +100,105 @@
   font-size: 14px;
 }
 
-.react-calendar {
+.project_wrap:hover .project_title {
+  color: black;
+}
+
+.project_table thead tr th {
+  text-align: left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: 500;
+}
+
+.project_table tbody tr td {
+  padding: 12px 0px;
+}
+
+/* calendar and big calndar css start */
+
+.react-calendar,
+.rbc-calendar {
   border-radius: 6px;
   border: 1px solid var(--border-color) !important;
 }
 
+.rbc-calendar {
+  padding: 0 4px;
+}
+
+.react-calendar__navigation .react-calendar__navigation__prev2-button,
+.react-calendar__navigation .react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.react-calendar__navigation .react-calendar__navigation__arrow {
+  font-size: 22px;
+}
+
+.react-calendar__month-view__weekdays,
+.react-calendar__month-view__weekdays__weekday > abbr {
+  text-decoration: none !important;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.rbc-toolbar {
+  padding: 10px 0px;
+}
+
+.rbc-btn-group > button {
+  border: 1px solid var(--border-color) !important;
+  font-size: 13px;
+  border-radius: 5px !important;
+}
+
+.rbc-active {
+  background-color: var(--primary-color) !important;
+  color: var(--text-white) !important;
+}
+
+.rbc-row-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  justify-content: center;
+}
+
+.rbc-date-cell {
+  text-align: center !important;
+}
+
+/* calendar and big calendar css end */
+
 /* below another */
 
 .modal_overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 2s ease-in-out;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.modal_content {
+  opacity: 0;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+  z-index: -1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .show_modal {
   opacity: 1;
   pointer-events: auto;
-}
-
-.modal_content {
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
+  z-index: 999;
 }
 
 .modal_overlay.show_modal .modal_content {
   opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.2s;
 }
 
 .todo_item {

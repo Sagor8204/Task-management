@@ -2,7 +2,7 @@ import React from "react";
 
 const TaskItem = ({ data }) => {
   return (
-    <div className="w-[235px] h-fit bg-white rounded-lg p-3">
+    <div className="w-[235px] h-fit bg-white rounded-lg p-3 cursor-pointer">
       <span className="px-3 py-1 rounded-md bg-blue-600 text-white text-[13px] inline-block font-normal mb-4">
         {data.category}
       </span>

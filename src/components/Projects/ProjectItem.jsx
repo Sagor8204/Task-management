@@ -10,17 +10,39 @@ const ProjectItem = ({ data }) => {
   };
 
   return (
-    <Link className="w-[49%]" to={`/project/details/${createSlug(data.title)}`}>
-      <div className="bg-white py-4 px-5 rounded-md add_project transition-all duration-300 ease-in-out">
-        <h3 className="mb-2">{data.title}</h3>
-        <span className="mb-3 inline-block font-normal text-[15px]">
-          {data.deadline}
-        </span>
+    <tr className="hover:bg-gray-100 project_wrap">
+      <td className="cursor-pointer">
+        <h3 className="text-sm pl-4 gray_text_color project_title transition-all duration-300">
+          {data.title}
+        </h3>
+      </td>
+      <td>
+        <span className="font-medium text-sm">{data.startDate}</span>
+      </td>
+      <td>
+        <span className="font-medium text-sm">{data.deadline}</span>
+      </td>
+      <td>
         <p className="text-sm leading-6 font-normal">
-          {data.description.slice(0, 150)}...
+          {data.description.slice(0, 50)}...
         </p>
-      </div>
-    </Link>
+      </td>
+      <td>
+        <span
+          className={`uppercase text-[13px] font-semibold ${
+            data.status === "ongoing"
+              ? "text-cyan-600"
+              : data.status === "complete"
+              ? "text-green-700"
+              : data.status === "critical"
+              ? "text-red-500"
+              : "text-black"
+          }`}
+        >
+          {data.status}
+        </span>
+      </td>
+    </tr>
   );
 };
 

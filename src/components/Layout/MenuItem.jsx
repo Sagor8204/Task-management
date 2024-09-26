@@ -10,7 +10,7 @@ const MenuItem = ({ datas }) => {
             className={({ isActive }) =>
               `${
                 isActive ? "sidebar_item_active" : ""
-              } px-3 py-[10px] flex items-center gap-2 cursor-pointer sidebar_item transition-all duration-300 ease-linear`
+              } px-3 py-[12px] flex items-center gap-2 cursor-pointer sidebar_item transition-all duration-300 ease-linear`
             }
             to={data.link}
           >
