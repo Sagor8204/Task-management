@@ -12,6 +12,7 @@ import Analytics from "./components/Analytics/Analytics.jsx";
 import Settings from "./components/Settings/Settings.jsx";
 import NotFound from "./components/NotFound/NotFound.jsx";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails.jsx";
+import Profile from "./components/Profile/Profile.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const routes = createBrowserRouter([
       {
         path: "*",
         element: <NotFound />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },

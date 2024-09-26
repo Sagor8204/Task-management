@@ -37,6 +37,11 @@
   border: 1px solid var(--border-color);
 }
 
+.border_color {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
 .search_input:focus {
   border: 1px solid var(--primary-color);
 }
@@ -48,6 +53,11 @@
 .search_input::placeholder {
   color: white;
   font-size: 15px;
+}
+
+.general_input::placeholder {
+  color: #7c828b;
+  font-size: 14px;
 }
 
 .profile {
@@ -170,6 +180,23 @@
 }
 
 /* calendar and big calendar css end */
+
+.progress {
+  position: absolute;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+
+.avatar {
+  border: 1px solid var(--border-color);
+}
+
+.profile_footer_card {
+  background-color: var(--container-color);
+}
 
 /* below another */
 

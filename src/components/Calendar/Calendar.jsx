@@ -12,7 +12,7 @@ const Calendar = () => {
         <h3 className="text-xl">Calendar</h3>
         <button
           onClick={() => setOpen(true)}
-          className="add_project px-5 py-[10px] text-sm rounded-md flex items-center gap-3"
+          className="add_project px-5 py-[10px] text-sm rounded-md flex items-center gap-3 bg-white"
         >
           Add Event <FiPlus />
         </button>

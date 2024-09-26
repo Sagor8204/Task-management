@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="flex justify-end">
         <div
           onClick={() => setAddProject(true)}
-          className="flex items-center gap-2 cursor-pointer p-2 add_project rounded-md transition-all duration-300 w-fit"
+          className="flex items-center gap-2 cursor-pointer p-2 add_project rounded-md transition-all duration-300 w-fit bg-white"
         >
           <h2 className="text-[15px]">Add Project</h2>
           <FiPlus />
